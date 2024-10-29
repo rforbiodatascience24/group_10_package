@@ -1,0 +1,29 @@
+Package: CentralDogmaFun
+Type: Package
+Title: CentralDogmaFun
+Version: 0.1.0
+Author: c(person(given = "Amalie",
+           family = "Schultz-Nielsen",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s204643@dtu.dk"), 
+    person(given = "Johanna",
+           family = "Haraldsdóttir",
+           role = "aut",
+           email = "s204657@dtu.dk"),
+    person(given = "Sofie",
+           family = "Brunn",
+           role = "aut",
+           email = "s194678@dtu.dk"),
+    person(given = "Marie",
+           family = "Murmann Kragh",
+           role = "aut",
+           email = "s203566@dtu.dk"),
+    person(given = "Malou Emma Bech",
+           family = "Jakobsen",
+           role = "aut",
+           email = "s203515@student.dtu.dk"),
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This function will replicate the central dogma. DNA to RNA to protein
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
