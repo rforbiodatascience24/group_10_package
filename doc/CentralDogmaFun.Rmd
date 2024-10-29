@@ -18,5 +18,20 @@ knitr::opts_chunk$set(
 library(CentralDogmaFun)
 ```
 
+### Sofie
 
-vORES FØRSTE FUNKTION HEDDER dna
+### Johanna
+
+
+### Malou
+
+### Marie
+
+
+### Amalie
+
+### Use cases for the package
+
+### Discussion on limiting the number of dependencies
+
+### Differences between loading packages
