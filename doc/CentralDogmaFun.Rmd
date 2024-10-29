@@ -40,11 +40,16 @@ RNA_to_codon("UGGUCC", start=1) # returns c("UGG","UCC")
 
 ### codons_to_aa
 
-The codons_to_aa function takes a vector of codons as strings and converts them into the corresponsing amino acid using the codon table. The amino acid letters are combined into one string.
+The codons_to_aa function converts codons into amino acids. The process mimics the biological process of translation, where RNA is read in codons by the ribosome and the corrsponding amino acid is added to the growing peptide chain. \\ The function takes a vector of codons as strings as input. The strings are converted into the corresponding one-letter amino acid code using the codon table. The one-letter amino acid codes are combined into one string and returned as output. \\ If c("UUU","CAA","GAC") is set as input, e.i. codons_to_aa(c("UUU","CAA","GAC")) the function will return "FQD" as output.
+
+```{r}
+codons_to_aa(c("UUU","CAA","GAC")) # returns "FDQ"
+``` 
 
 ### Amalie
 
 ### Use cases for the package
+The package is intended to easily transcribe and translate a random or known DNA sequence, resembling the steps in the central dogma. The functions in the package are made so that they can be used sequentially in a pipeline and fully translate the DNA into protein and plot the count of the different amino acids. 
 
 ### Discussion on limiting the number of dependencies
 When making code more useable, it is crucial to limit the number of dependencies. \\ The more dependencies a code is relying on, the more points of potential failture of your code arise. This is a consequence of code/packages being uploaded and then not updated. If a code of yours is then built, and therefore dependent, on this package, it might potneitally stop wokring, if said package is not updated along other packages used in yoru code which might depend on each other. 
