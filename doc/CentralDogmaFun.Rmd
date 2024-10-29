@@ -18,9 +18,13 @@ knitr::opts_chunk$set(
 library(CentralDogmaFun)
 ```
 
+### Group 10 GitHub repository
+The following link is the GitHub repository of group 10:\\
+https://github.com/rforbiodatascience24/group10
+
 ### Random_DNA_sequence
 
-The function Random_DNA_sequence generates a random DNA sequence of a specified length. In the central dogma this can be viewed as the DNA replication process as it mimics the idea of DNA sequence formation. The Random_DNA_sequence function takes one argument called sequence_length. It samples from the four DNA nucleotides (A, T, G, C) with a sample size equal to sequence_length. The replace = TRUE allows each nucleotide to be sampled multiple times, creating a random sequence. This randomly generated nucleotide sequence (called DNA_sample) is taken and combined into a single string (a continuous DNA sequence) without any separators between characters.
+The function Random_DNA_sequence generates a random DNA sequence of a specified length. In the central dogma this can be viewed as the DNA replication process as it mimics the idea of DNA sequence formation. The Random_DNA_sequence function takes one argument called sequence_length. It samples from the four DNA nucleotides (A, T, G, C) with a sample size equal to sequence_length. The replace = TRUE allows each nucleotide to be sampled multiple times, creating a random sequence. This randomly generated nucleotide sequence (called DNA_sample) is taken and combined into a single string (a continuous DNA sequence) without any separators between characters.\\
 If the input is set to 10 the function for instance returns a string of "AATGGATGAC". A seed is set, as the output is random, to make sure it is the same example shown in the code below.
 
 ```{r}
@@ -76,6 +80,20 @@ aa_count_plot <- Random_DNA_sequence(30) |>
 
 aa_count_plot
 ```
+
+
+### Other functions to include
+
+Here are some examples of how the package could be further extended with other types of functions relevant in the central dogma.\\
+
+A replication fork function:\\
+A function could be made that simulates the process of DNA unwinding and forming two complementary strands. It could take a DNA sequence and generate two new strands which mimicks the replication fork where the DNA splits into two complementary strands.\\
+
+A DNA mutation function:\\
+Mutations can happen in the DNA replication, therefore a function that randomly introduces mutations into a DNA sequence could be relevant. This function could simulate different types of mutations such as: substitutions, insertions, or deletions.\\
+
+A protein folding function:\\
+The final step of the central dogma is the protein formation. Therefore, a relevant function could be one that takes an amino acid sequence and predicts a simple version of a protein structure - for instance based on types of foldings like alpha-helix and beta-sheet.\\
 
 
 
