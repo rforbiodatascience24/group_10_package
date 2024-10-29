@@ -28,7 +28,7 @@ The DNA_to_RNA function convert a DNA sequence into an RNA sequence by replacing
 DNA_to_RNA("ATTGCG")
 ```
 
-### Malou
+
 
 ### RNA_to_codon
 
@@ -38,6 +38,9 @@ The RNA_to_codon function converts a string of RNA seuqence into codons of 3 nuc
 RNA_to_codon("UGGUCC", start=1) # returns c("UGG","UCC")
 ```
 
+### codons_to_aa
+
+The codons_to_aa function takes a vector of codons as strings and converts them into the corresponsing amino acid using the codon table. The amino acid letters are combined into one string.
 
 ### Amalie
 
