@@ -30,12 +30,22 @@ DNA_to_RNA("ATTGCG")
 
 ### Malou
 
-### Marie
+### RNA_to_codon
+
+The RNA_to_codon function converts a string of RNA seuqence into codons of 3 nucleotides. The procces mimics how the nucelotides of the mRNA sequence are being read into codons which then eventually is translated into amino acids in the portein seuqence. \\ The function takes as input a RNA sequence in a string plus the parameter start, which should be set to a default of = 1, unless another starting point than the beginning of the RNA sequence is wanted. The function then seperates the RNA string into a vector of strings containing the codon in each string. \\ If "UGGUCC" is set as input, e.i. RNA_to_codon("UGGUCC", start=1) the function will return c("UGG","UCC") as output where "UGG" and "UCC" is each a codon as the function begins at position 1. 
+
+```{r}
+RNA_to_codon("UGGUCC", start=1) # returns c("UGG","UCC")
+```
+
 
 ### Amalie
 
 ### Use cases for the package
 
 ### Discussion on limiting the number of dependencies
+When making code more useable, it is crucial to limit the number of dependencies, as 
+
+
 
 ### Differences between loading packages
