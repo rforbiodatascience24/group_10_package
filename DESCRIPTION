@@ -34,5 +34,8 @@ Imports:
     ggplot2 (>= 3.4.3),
     stringr (>= 1.5.0)
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+VignetteBuilder: knitr
