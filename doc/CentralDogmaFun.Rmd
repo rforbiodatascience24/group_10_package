@@ -47,8 +47,7 @@ The codons_to_aa function takes a vector of codons as strings and converts them 
 ### Use cases for the package
 
 ### Discussion on limiting the number of dependencies
-When making code more useable, it is crucial to limit the number of dependencies, as 
-
-
+When making code more useable, it is crucial to limit the number of dependencies. \\ The more dependencies a code is relying on, the more points of potential failture of your code arise. This is a consequence of code/packages being uploaded and then not updated. If a code of yours is then built, and therefore dependent, on this package, it might potneitally stop wokring, if said package is not updated along other packages used in yoru code which might depend on each other. 
 
 ### Differences between loading packages
+One can call functions and packages in different manners. In general one can use a package by either loading or attaching. When loading the package, you connect the specific function to the library you want to use it from. If one instead uses attaching, you simply load the library and then call then function when needed in your code. \\ One might say, that attahcing makes it easier to call functions, however it also adds to riks of conflict if a function names is present in more than one of the libraries loaded. 
