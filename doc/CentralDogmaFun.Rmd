@@ -49,7 +49,18 @@ codons_to_aa(c("UUU","CAA","GAC")) # returns "FDQ"
 ### Amalie
 
 ### Use cases for the package
-The package is intended to easily transcribe and translate a random or known DNA sequence, resembling the steps in the central dogma. The functions in the package are made so that they can be used sequentially in a pipeline and fully translate the DNA into protein and plot the count of the different amino acids. 
+The package is intended to easily transcribe and translate a random or known DNA sequence, resembling the steps in the central dogma. The functions in the package are made so that they can be used sequentially in a pipeline and fully translate the DNA into protein and plot the count of the different amino acids.
+
+```{r}
+aa_count_plot <- Random_DNA_sequence(30) |> 
+  DNA_to_RNA() |> 
+  RNA_to_codon(start = 1) |> 
+  codons_to_aa() |> 
+  protein_plot()
+
+aa_count_plot
+```
+
 
 ### Discussion on limiting the number of dependencies
 When making code more useable, it is crucial to limit the number of dependencies. \\ The more dependencies a code is relying on, the more points of potential failture of your code arise. This is a consequence of code/packages being uploaded and then not updated. If a code of yours is then built, and therefore dependent, on this package, it might potneitally stop wokring, if said package is not updated along other packages used in yoru code which might depend on each other. 
