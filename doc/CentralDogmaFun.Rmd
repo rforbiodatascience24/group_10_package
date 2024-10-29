@@ -98,10 +98,10 @@ The final step of the central dogma is the protein formation. Therefore, a relev
 
 
 ### Discussion on limiting the number of dependencies
-In order to make code more usableit is crucial to limit the number of dependencies. \\ The more dependencies a code is relying on, the more points of potential failure of the code arise. This is a consequence of code/packages being uploaded and then not updated. If a code is then built, and therefore dependent, on this package it might potentially stop working if said package is not updated along other packages needed in the code which might again then depend on each other. 
+In order to make code more usable it is crucial to limit the number of dependencies. \\ The more dependencies a code is relying on, the more points of potential failure of the code arise. This is a consequence of code/packages being uploaded and then not updated. If a code is then built, and therefore dependent, on this package it might potentially stop working if said package is not updated along other packages needed in the code which might again then depend on each other. 
 
 
 
 ### Differences between loading packages
-It is possible to call functions and packages in different manners. In general a package can be used by either loading or attaching. When loading the package you connect the specific function to the library you want to use it from. Where for using attaching you simply load the library and then call the function when needed in your code. \\ It might seems easier to use attach to call functions, however this also adds the risk of conflict if the name of a function is present in more than one of the libraries loaded. 
+It is possible to call functions and packages in different manners. In general a package can be used by either loading or attaching. When loading the package you connect the specific function to the library you want to use it from. Where for using attaching you simply load the library and then call the function when needed in your code. \\ It might seem easier to use attach to call functions, however this also adds the risk of conflict if the name of a function is present in more than one of the libraries loaded. 
 
