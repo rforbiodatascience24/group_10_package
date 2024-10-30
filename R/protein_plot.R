@@ -1,4 +1,4 @@
-#' Plot proteins from sequence
+#' Plot Amino acids from an input sequence
 #'
 #' @param protein_seq Is the input Aminoacid sequence
 #' @param unique_protein Finds all unique Aminoacids present in the sequence
@@ -16,22 +16,22 @@
 #' @examples protein_plot("AGAAK") #should plot the 3 A's 1 G and 1 K
 
 # The dna sequence is split into charaters and all unique AA's are found
-protein_plot <- function(protein_seq){
-  unique_protein <- protein_seq |>
+protein_plot <- function(AA_seq){
+  unique_protein <- AA_seq |>
     stringr::str_split(pattern = stringr::boundary("character"), simplify = TRUE) |>
     as.character() |>
     unique()
 
 # All the different AA's are counted in categories of the unique AA's.
-  counts <- sapply(unique_protein, function(amino_acid) stringr::str_count(string = protein_seq, pattern =  amino_acid)) |>
+  counts <- sapply(unique_protein, function(amino_acid) stringr::str_count(string = AA_seq, pattern =  amino_acid)) |>
     as.data.frame()
 
   colnames(counts) <- c("Counts")
-  counts[["protein_seq"]] <- rownames(counts)
+  counts[["AA_seq"]] <- rownames(counts)
 
 # The amounts of unique AA's are plotted in a column plot
   visualized_protein <- counts |>
-    ggplot2::ggplot(ggplot2::aes(x = protein_seq, y = Counts, fill = protein_seq)) +
+    ggplot2::ggplot(ggplot2::aes(x = AA_seq, y = Counts, fill = AA_seq)) +
     ggplot2::geom_col() +
     ggplot2::theme_bw() +
     ggplot2::theme(legend.position = "none")
