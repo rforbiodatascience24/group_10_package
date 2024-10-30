@@ -20,9 +20,13 @@ library(CentralDogmaFun)
 
 ### Sofie
 
-### DNA_to_RNA
+### Transcription
 
-The DNA_to_RNA function convert a DNA sequence into an RNA sequence by replacing thymine (T) with uracil (U) in the DNA input sequence. The process mimics the biological process of transcription, where DNA is transcribed to RNA, and thymine is substituted with uracil \\ In the DNA_to_RNA function a DNA sequence is taken as input, this is represented by a string of nucleotide letters (A, T, C and G). using the gsub function, all occurences of "T" in the DNA sequence are replaced with "U" to reflect the substitution in nucleotides that happens during transcription. The resulting RNA sequence is then returned as output. \\ If "ATTGCG" is set as input, the function will return "AUUGCG". See the code for reference:
+The DNA_to_RNA function convert a DNA sequence into an RNA sequence by replacing thymine (T) with uracil (U) in the DNA input sequence. The process mimics the biological process of transcription, where DNA is transcribed to RNA, and thymine is substituted with uracil
+
+In the DNA_to_RNA function a DNA sequence is taken as input, this is represented by a string of nucleotide letters (A, T, C and G). using the gsub function, all occurrences of "T" in the DNA sequence are replaced with "U" to reflect the substitution in nucleotides that happens during transcription. The resulting RNA sequence is then returned as output.
+
+If "ATTGCG" is set as input, the function will return "AUUGCG". See the code for reference:
 
 ```{r}
 DNA_to_RNA("ATTGCG")
