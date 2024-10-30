@@ -16,7 +16,7 @@ protein_plot(AA_seq)
 \item{visualized_protein}{Is plot of the counts of different Aminoacids.}
 }
 \value{
-the function returns a plot of how many unique protein there are present in the seq.
+the function returns a plot of how many unique AA's there are present in the seq.
 }
 \description{
 Plot Amino acids from an input sequence
