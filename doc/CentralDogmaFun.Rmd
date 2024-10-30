@@ -68,7 +68,7 @@ The protein_plot function takes a sequence of aminoacids (AA), counts the amount
 Hereafter all the different proteins are counted in categories of the unique proteins. These counts are then used in a ggplot2::geom_col plot. Hereby the function is able to costumize the amount of columns (dependent on the unique AA's). Hereby, this function is able to give a visualization of the contents in the end product of the central dogma.
 
 ```{r}
-protein_plot("FDQQDQKA") #plots a histogram of the contents. For this sequence there will be 5 columns: F,D,Q,K,A with the counts: 1,2,3,1,1.
+protein_plot("FDQQDQKA") #plots a histogram of the AA contents. For this sequence there will be 5 columns: F,D,Q,K,A with the counts: 1,2,3,1,1.
 ```
 
 
