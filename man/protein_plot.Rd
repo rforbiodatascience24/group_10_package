@@ -7,13 +7,13 @@
 protein_plot(protein_seq)
 }
 \arguments{
-\item{protein_seq}{Is the input protein sequence}
+\item{protein_seq}{Is the input Aminoacid sequence}
 
-\item{unique_protein}{Finds all unique proteins present in the protein sequence}
+\item{unique_protein}{Finds all unique Aminoacids present in the sequence}
 
-\item{protein_plot}{Is the final plot of the proteins called in the global environment}
+\item{protein_plot}{Is the final plot of the Aminoacids are called in the global environment}
 
-\item{visualized_protein}{Is plot of the proteins}
+\item{visualized_protein}{Is plot of the counts of different Aminoacids.}
 }
 \value{
 the function returns a plot of how many unique protein there are present in the seq.
