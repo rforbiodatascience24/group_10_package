@@ -46,7 +46,16 @@ The codons_to_aa function converts codons into amino acids. The process mimics t
 codons_to_aa(c("UUU","CAA","GAC")) # returns "FDQ"
 ``` 
 
-### Amalie
+### protein_plot
+
+The protein_plot function takes a sequence of aminoacids (AA), counts the amount of each AA and plot them in a column-diagram/histogram. This is done in order to give an overview of the content of an AA-seq. The function works by first finding all unique AA in the sequence.
+Hereafter all the different proteins are counted in categories of the unique proteins. These counts are then used in a ggplot2::geom_col plot. Hereby the function is able to costumize the amount of columns (dependent on the unique AA's). Hereby, this function is able to give a visualization of the contents in the end product of the central dogma.
+
+```{r}
+protein_plot("FDQQDQKA") #plots a histogram of the contents. For this sequence there will be 5 columns: F,D,Q,K,A with the counts: 1,2,3,1,1.
+```
+
+
 
 ### Use cases for the package
 The package is intended to easily transcribe and translate a random or known DNA sequence, resembling the steps in the central dogma. The functions in the package are made so that they can be used sequentially in a pipeline and fully translate the DNA into protein and plot the count of the different amino acids. 
