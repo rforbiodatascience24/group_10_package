@@ -45,7 +45,7 @@ If "ATTGCG" is set as input, the function will return "AUUGCG". See the code for
 
 
 ```{r}
-DNA_to_RNA("ATTGCG")
+DNA_to_RNA("ATTGCG") # returns "AUUCGC"
 ```
 
 
