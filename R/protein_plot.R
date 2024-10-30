@@ -6,7 +6,7 @@
 #' @param visualized_protein Is plot of the counts of different Aminoacids.
 #'
 #'
-#' @return the function returns a plot of how many unique protein there are present in the seq.
+#' @return the function returns a plot of how many unique AA's there are present in the seq.
 #' @export
 #'
 #'

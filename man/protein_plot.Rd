@@ -2,9 +2,9 @@
 % Please edit documentation in R/protein_plot.R
 \name{protein_plot}
 \alias{protein_plot}
-\title{Plot proteins from sequence}
+\title{Plot Amino acids from an input sequence}
 \usage{
-protein_plot(protein_seq)
+protein_plot(AA_seq)
 }
 \arguments{
 \item{protein_seq}{Is the input Aminoacid sequence}
@@ -19,7 +19,7 @@ protein_plot(protein_seq)
 the function returns a plot of how many unique protein there are present in the seq.
 }
 \description{
-Plot proteins from sequence
+Plot Amino acids from an input sequence
 }
 \examples{
 protein_plot("AGAAK") #should plot the 3 A's 1 G and 1 K
