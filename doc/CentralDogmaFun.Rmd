@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(CentralDogmaFun)
+library("CentralDogmaFun")
 ```
 
 ### Group 10 GitHub repository
